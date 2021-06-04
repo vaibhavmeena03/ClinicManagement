@@ -22,19 +22,19 @@
       }
     },
     {
-      "name": "clinicApp",
+      "name": "clinicApp_2021",
       "type": "Microsoft.Web/sites",
       "apiVersion": "2018-11-01",
       "location": "[resourceGroup().location]",
       "tags": {
         "[concat('hidden-related:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/appServicePlan1')]": "Resource",
-        "displayName": "clinicApp"
+        "displayName": "clinicApp_2021"
       },
       "dependsOn": [
         "[resourceId('Microsoft.Web/serverfarms', 'appServicePlan1')]"
       ],
       "properties": {
-        "name": "clinicApp",
+        "name": "clinicApp_2021",
         "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', 'appServicePlan1')]"
       }
     }
